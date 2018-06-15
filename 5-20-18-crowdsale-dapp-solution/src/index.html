@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TcT Token - Crowdsale & Web Wallet</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/utility.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row bottom-margin-20">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Tom Cruise Token (TcT) Web Wallet and Crowdsale</h1>
+          <hr/>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Participate in the TcT ICO</h3>
+            </div>
+            <div class="panel-body">
+
+              <p class="bottom-margin-20">
+                  <p><strong>Your Address:&nbsp;</strong> <span id="yourAddress"></span></p>          
+              </p>
+
+              <p class="bottom-margin-20">
+                  <span><strong>How Much ETH you Have:</strong></span>
+
+                  <span id="yourETHAmount"></span>
+
+                  <span>&nbsp;ETH</span>
+              </p>
+
+              <p class="bottom-margin-20">
+                <strong>The TcT token's smart contract address</strong>: <span id="tokenAddress"></span>
+              </p>
+
+              <p class="bottom-margin-20">
+                <strong>Address of Tom Cruise, the founder of TcT</strong>: <span id="addressWhereFundsGoto"></span>
+              </p>
+
+              <p class="bottom-margin-20">
+                <strong>The crowdsale's smart contract address</strong>: <span id="crowdsaleAddress"></span>
+              </p>
+
+              <p class="bottom-margin-20">
+                <strong>Tokens available to purchase</strong>: <span id="crowdSaleTokensAvailable"></span> TcT
+              </p>
+              
+              <p class="bottom-margin-20">
+                <strong>Date this crowd sale started</strong>: <span id="dateStartOfCrowdSale"></span>
+              </p>
+
+              <p class="bottom-margin-20">
+                <strong>How much each TcT token costs</strong>: <span id="rate"></span> ETH
+              </p>
+
+              <p class="bottom-margin-20">
+                <strong>How much ETH this ICO has raised</strong>: <span id="etherRaised"></span> ETH
+              </p>
+
+              <p class="bottom-margin-20">
+                <strong>TcT tokens sold in this ICO</strong>: <span id="tokensSold"></span> TcT
+              </p>
+
+              <input type="text" class="form-control bottom-margin-20" id="addressWhereTheTokensShouldGoTo" placeholder="Address where the tokens should go to" />
+
+              <input type="number" id="howManyTokens" class="form-control bottom-margin-20" placeholder="how many tokens do you want to buy?" />
+
+              <p class="bottom-margin-20">
+                <strong>You should have</strong>: <span id="howMuchETHYouShouldHave">0</span> ETH in your metamask wallet to buy
+              </p>
+
+              <button class="btn btn-primary" id="purchaseTcT" type="button">Purchase TcT</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="panel panel-default bottom-margin-20">
+            <div class="panel-heading">
+              <h3 class="panel-title">My TcT Web Wallet</h3>
+            </div>
+            <div class="panel-body">
+              <h4>Balance</h4>
+              <span id="TTBalance"></span> TcT<br/><br/>
+              <h4>Transfer TcT to an Address</h4>
+              <input type="text" class="form-control bottom-margin-20" id="TTTransferAddress" placeholder="Address" />
+              <input type="text" class="form-control bottom-margin-20" id="TTTransferAmount" placeholder="Amount" />
+              <button class="btn btn-primary" id="transferButton" type="button">Transfer</button>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Check Address to see TcT balance</h3>
+            </div>
+            <div class="panel-body">
+              <strong>Balance of Address Provided</strong>: <span id="balanceOfAddressProvided"></span> TcT<br/><br/>
+              <input type="text" class="form-control bottom-margin-20" id="checkBalanceAddress" placeholder="Address" />
+              <button class="btn btn-primary" id="checkBalanceButton" type="button">Check Balance of Address</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

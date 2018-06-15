@@ -1,0 +1,23 @@
+.bottom-margin-50 {
+	margin-bottom : 50px;
+}
+
+.bottom-margin-20 {
+	margin-bottom : 20px;
+}
+
+.right-margin-5 {
+	margin-right : 5px;
+}
+
+.width-350 {
+	width: 350px;
+}
+
+.width-300 {
+	width: 300px;
+}
+
+.hide {
+	display: none;
+}
